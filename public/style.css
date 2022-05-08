@@ -1,0 +1,11 @@
+body {
+    box-sizing: border-box; 
+    font-family: 'Roboto Condensed', sans-serif; 
+    margin: 10;    
+}
+
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(240, 95, 28);
+}
+

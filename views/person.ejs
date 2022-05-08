@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ID es la referencia para el nombre de la persona.-->
+        <h1>Person Name: <%= ID %></h1> 
+    <!-- Msg será la variable con tres posibles opciones: Hola, Adios y Bienvenido.-->
+        <h2>Mensaje: <%= Msg %></h2>
+        <p>
+            <% switch (Msg) {
+            <!-- En todos los ciclos FOR "Times" representa el número de veces que se repetirá nuestro mensaje.-->
+            <!-- En caso de ser Hola.-->
+                case 'Hola': %>
+                    <% for (var i = 0; i< Times;  i++) { %>
+                        <h3>Hola: <%= ID %></h3> 
+                        <% } %>        
+                    <% break;
+            <!-- En caso de ser Adios.-->    
+                case 'Adios': %>
+                    <% for (var i = 0; i< Times;  i++) { %>
+                        <h3>Adios: <%= ID %></h3> 
+                        <% } %>        
+                    <% break;    
+            <!-- En caso de ser Bienvenido.-->       
+                case 'Bienvenido': %>
+                    <% for (var i = 0; i< Times;  i++) { %>
+                        <h3>Bienvenido: <%= ID %></h3> 
+                        <% } %>        
+                    <% break;   
+            } %>       
+        </p>                
+</body>
+</html>
